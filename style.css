@@ -1,0 +1,40 @@
+* {
+    border: 1px solid red;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-container {
+    background-color: red;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer-container {
+    background-color: blueviolet;
+}
+
+.top-container {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+}
