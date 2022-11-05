@@ -7,15 +7,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: #f9faf8;
+    background-color: #1f2937;
 }
 
 .header-container {
-    background-color: red;
-}
-
-.header {
+    background-color: #1f2937;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 ul {
@@ -37,4 +36,14 @@ a {
     background-color: green;
     display: flex;
     flex-direction: column;
+}
+
+.imagebox-container { /* holds the 4 image boxes */
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagebox {
+    height: 200px;
+    width: 200px;
 }
