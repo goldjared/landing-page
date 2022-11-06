@@ -11,10 +11,30 @@ body {
     background-color: #1f2937;
 }
 
-.header-container {
-    background-color: #1f2937;
+.header-container { 
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-1a { /* container under header */
+    height: 200px;
+    justify-content: space-around;
+    align-items: center;
+    background: #1f2937;
+}
+
+.container-1b {
+    height: 200px;
+    justify-content: space-around;
+    align-items: center;
+    background: #1f2937;
 }
 
 ul {
@@ -29,7 +49,10 @@ a {
 }
 
 .footer-container {
-    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    align-items: center;
 }
 
 .top-container {
@@ -43,7 +66,37 @@ a {
     justify-content: space-around;
 }
 
-.imagebox {
+.imagebox { /* the image boxes inside above container */
     height: 200px;
     width: 200px;
+}
+.container-2, .imagebox { /* 4image containers, coloring and text-alignment */
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.container-3 { /* quote section */
+    background-color: #e5e7eb;
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+
+}
+
+.container-4 {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.bottom-box-container {
+    height: 100px;
+    width: 700px;
+    background-color: #3882f6;
+    display: flex;
+    justify-content: center;
 }
