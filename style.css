@@ -1,26 +1,32 @@
 body {
     min-height: 100vh;
-    background-color: yellow;
     margin: 0;
     display: flex;
     flex-direction: column;
-    background: white;
+    background-color: #1f2937;
 }
 
 * {
-    border: 1px solid red;
+    /* debug border: 1px solid red; */
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: red;
-    background-color: #1f2937;
+    color: white;
+}
+
+.h-button {
+    height: 25px;
+    width: 75px;
+    border: 1px solid #3882f6;
+    border-radius: 5px;
+    background-color: #3882f6;
+    color: white;
 }
 
 .footer {
-    background: pink;
     display: flex;
     justify-content: center;
 }
@@ -30,6 +36,11 @@ ul { /* links in top right header */
     margin: 0;
     list-style: none;
     display: flex;
+    gap: 15px;
+}
+
+h1, h2, h3, h4, h5 { /* removes margin from h */
+    margin: 0;
 }
 
 .container.one  {
@@ -37,6 +48,7 @@ ul { /* links in top right header */
     height: 250px;
     align-items: center;
     background-color: #1f2937;
+    color: white;
 }
 
 .h-leftbox,
@@ -50,6 +62,7 @@ ul { /* links in top right header */
     flex-direction: column;
     align-items: center;
     flex: 1;
+    background: white;
 }
 
 .c2-imagecontainer {
@@ -61,12 +74,13 @@ ul { /* links in top right header */
     display: flex;
     flex: 1;
     align-items: center;
-    background-color: gray;
+    background-color: rgb(222, 222, 222);
 }
 
 .container.four {
     display: flex;
     justify-content: center;
+    background-color: white;
 }
 
 .c4-box {
@@ -74,8 +88,8 @@ ul { /* links in top right header */
     align-items: center;
     width: 500px;
     height: 100px;
-    background: #ffb6c1;
-    border: 2px solid #f08080;
+    background: #3882f6;
+    border: 2px solid #3882f6;
     border-radius: 20px;
 }
 
