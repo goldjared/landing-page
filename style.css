@@ -4,6 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #1f2937;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 * {
@@ -15,6 +16,7 @@ body {
     justify-content: space-between;
     align-items: center;
     color: white;
+    padding: 5px 100px;
 }
 
 .h-button {
@@ -24,19 +26,30 @@ body {
     border-radius: 5px;
     background-color: #3882f6;
     color: white;
+    margin-top: 5px;
 }
 
 .footer {
     display: flex;
     justify-content: center;
+    height: 50px;
+    align-items: center;
+    color: white;
 }
 
-ul { /* links in top right header */
+ul, a { /* links in top right header */
     padding: 0;
     margin: 0;
     list-style: none;
     display: flex;
+    text-decoration: none;
     gap: 15px;
+    color: white;
+}
+
+a {
+    font-size: 25px;
+    font-weight: bold;
 }
 
 h1, h2, h3, h4, h5 { /* removes margin from h */
@@ -47,15 +60,25 @@ h1, h2, h3, h4, h5 { /* removes margin from h */
     display: flex;
     height: 250px;
     align-items: center;
+    justify-content: center;
     background-color: #1f2937;
     color: white;
+    padding: 0 100px;
 }
 
 .h-leftbox,
 .h-rightbox {
     flex: 1;
     height: 150px;
+    gap: 10px;
+    max-width: 400px;
+
 }
+
+.h-leftbox.text {
+    padding: 50px;
+}
+
 
 .container.two {
     display: flex;
@@ -63,6 +86,8 @@ h1, h2, h3, h4, h5 { /* removes margin from h */
     align-items: center;
     flex: 1;
     background: white;
+    gap: 25px;
+    padding-top: 25px;
 }
 
 .c2-imagecontainer {
@@ -72,31 +97,57 @@ h1, h2, h3, h4, h5 { /* removes margin from h */
 
 .container.three {
     display: flex;
-    flex: 1;
+    flex: 0;
     align-items: center;
     background-color: rgb(222, 222, 222);
+    max-height: 250px;
+    padding: 0 100px;
+    justify-content: center;
 }
+
+blockquote {
+    max-width: 779px;
+    min-width: 400px;
+} 
 
 .container.four {
     display: flex;
     justify-content: center;
     background-color: white;
+    align-items: center;
+    padding: 0 100px;
+    flex: 1;
+    
 }
 
 .c4-box {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    width: 500px;
-    height: 100px;
+    width: 600px;
+    height: 75px;
     background: #3882f6;
     border: 2px solid #3882f6;
     border-radius: 20px;
+    color: white;
+    padding: 10px 50px;
+    min-width: 300px;
+}
+
+.c4-button {
+    height: 25px;
+    width: 75px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #3882f6;
+    color: white;
 }
 
 .image {
     height: 100px;
     width: 100px;
-    border: 2px solid #f08080;
+    border: 2px solid #1f2937;
+    background-color: #1f2937;
     border-radius: 20px;
 }
 
@@ -104,4 +155,19 @@ h1, h2, h3, h4, h5 { /* removes margin from h */
     width: 100%;
     height: 100%;
     border-radius: 20px;
+}
+
+.hero-image {
+    height: 100%;
+    width: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.text.two, span {
+    font-size: 12px;
 }
